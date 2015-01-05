@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="404px" height="405px" viewBox="0 0 404 405" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>A</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="A" sketch:type="MSArtboardGroup" fill="#FFFFFF">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(-1.000000, 0.000000)">
+                <g transform="translate(33.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-17" x="0" y="0" width="340" height="5"></rect>
+                    <rect id="Rectangle-18" x="0" y="5" width="2" height="400"></rect>
+                    <rect id="Rectangle-18" x="338" y="5" width="2" height="400"></rect>
+                    <rect id="Rectangle-20" x="0" y="403" width="340" height="2"></rect>
+                    <rect id="Rectangle-20" x="0" y="83" width="340" height="2"></rect>
+                    <rect id="Rectangle-20" x="0" y="163" width="340" height="2"></rect>
+                    <rect id="Rectangle-20" x="0" y="243" width="340" height="2"></rect>
+                    <rect id="Rectangle-20" x="0" y="323" width="340" height="2"></rect>
+                    <rect id="Rectangle-21" x="69" y="5" width="1" height="400"></rect>
+                    <rect id="Rectangle-21" x="137" y="5" width="1" height="400"></rect>
+                    <rect id="Rectangle-21" x="204" y="5" width="1" height="400"></rect>
+                    <rect id="Rectangle-21" x="272" y="5" width="1" height="400"></rect>
+                </g>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="171" cy="124" r="21"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="238" cy="124" r="21"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="306" cy="124" r="21"></circle>
+                <g id="Invisible-elements" transform="translate(0.000000, 31.000000)" sketch:type="MSShapeGroup" opacity="0">
+                    <circle id="Invisible-E-dot" cx="33" cy="337" r="21"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

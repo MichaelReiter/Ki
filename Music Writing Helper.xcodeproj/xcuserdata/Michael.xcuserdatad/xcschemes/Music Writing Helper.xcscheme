@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4C4A8C2E19F3101F0045DE7D"
-               BuildableName = "Music Writing Helper.app"
+               BuildableName = "Ki.app"
                BlueprintName = "Music Writing Helper"
                ReferencedContainer = "container:Music Writing Helper.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C4A8C2E19F3101F0045DE7D"
-            BuildableName = "Music Writing Helper.app"
+            BuildableName = "Ki.app"
             BlueprintName = "Music Writing Helper"
             ReferencedContainer = "container:Music Writing Helper.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C4A8C2E19F3101F0045DE7D"
-            BuildableName = "Music Writing Helper.app"
+            BuildableName = "Ki.app"
             BlueprintName = "Music Writing Helper"
             ReferencedContainer = "container:Music Writing Helper.xcodeproj">
          </BuildableReference>
@@ -80,14 +80,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C4A8C2E19F3101F0045DE7D"
-            BuildableName = "Music Writing Helper.app"
+            BuildableName = "Ki.app"
             BlueprintName = "Music Writing Helper"
             ReferencedContainer = "container:Music Writing Helper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Release">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"

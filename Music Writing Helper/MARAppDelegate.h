@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KeyViewController.h"
 
 @interface MARAppDelegate : UIResponder <UIApplicationDelegate>
 

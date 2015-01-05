@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="51px" height="34px" viewBox="0 0 51 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Random</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Random" sketch:type="MSArtboardGroup" stroke-linecap="round" stroke="#FFFFFF" stroke-width="5">
+            <g sketch:type="MSLayerGroup" transform="translate(3.000000, 3.000000)">
+                <path d="M42.9171126,1.44974747 L42.9171126,8.09545007 L36.1735912,8.09545007" id="Path-5" sketch:type="MSShapeGroup" transform="translate(39.742641, 4.949747) rotate(-45.000000) translate(-39.742641, -4.949747) "></path>
+                <path d="M42.9171126,19.4497475 L42.9171126,26.0954501 L36.1735912,26.0954501" id="Path-5" sketch:type="MSShapeGroup" transform="translate(39.742641, 22.949747) rotate(-45.000000) translate(-39.742641, -22.949747) "></path>
+                <path d="M0,5 C0,5 3,5 12,5 C21,5 20,23 28,23 L39.0147027,23" id="Path-11" sketch:type="MSShapeGroup" transform="translate(19.500000, 14.000000) scale(1, -1) translate(-19.500000, -14.000000) "></path>
+                <path d="M0,5 C0,5 3,5 12,5 C21,5 20,23 28,23 L39.0147027,23" id="Path-12" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

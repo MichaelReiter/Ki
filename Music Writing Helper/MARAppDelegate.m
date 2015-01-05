@@ -7,14 +7,16 @@
 //
 
 #import "MARAppDelegate.h"
+#import "KeyViewController.h"
 
 @implementation MARAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    KeyViewController *keyVC = [[KeyViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:keyVC];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
