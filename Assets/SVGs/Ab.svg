@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="404px" height="405px" viewBox="0 0 404 405" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Ab</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Ab" sketch:type="MSArtboardGroup" fill="#FFFFFF">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(12.000000, 0.000000)">
+                <rect id="Rectangle-17" sketch:type="MSShapeGroup" x="20" y="0" width="340" height="5"></rect>
+                <path d="M20,24.0233902 L20,5 L22,5 L22,24.0233902 C21.6686172,24.0078547 21.3352259,24 21,24 C20.6647741,24 20.3313828,24.0078547 20,24.0233902 Z M20,65.9766098 L20,405 L22,405 L22,65.9766098 C21.6686172,65.9921453 21.3352259,66 21,66 C20.6647741,66 20.3313828,65.9921453 20,65.9766098 Z" id="Rectangle-18" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-18" sketch:type="MSShapeGroup" x="358" y="5" width="2" height="400"></rect>
+                <rect id="Rectangle-20" sketch:type="MSShapeGroup" x="20" y="403" width="340" height="2"></rect>
+                <rect id="Rectangle-20" sketch:type="MSShapeGroup" x="20" y="83" width="340" height="2"></rect>
+                <rect id="Rectangle-20" sketch:type="MSShapeGroup" x="20" y="163" width="340" height="2"></rect>
+                <rect id="Rectangle-20" sketch:type="MSShapeGroup" x="20" y="243" width="340" height="2"></rect>
+                <rect id="Rectangle-20" sketch:type="MSShapeGroup" x="20" y="323" width="340" height="2"></rect>
+                <rect id="Rectangle-21" sketch:type="MSShapeGroup" x="89" y="5" width="1" height="400"></rect>
+                <rect id="Rectangle-21" sketch:type="MSShapeGroup" x="157" y="5" width="1" height="400"></rect>
+                <rect id="Rectangle-21" sketch:type="MSShapeGroup" x="224" y="5" width="1" height="400"></rect>
+                <rect id="Rectangle-21" sketch:type="MSShapeGroup" x="292" y="5" width="1" height="400"></rect>
+                <path d="M21,66 C32.5979797,66 42,56.5979797 42,45 C42,33.4020203 32.5979797,24 21,24 C9.40202025,24 0,33.4020203 0,45 C0,56.5979797 9.40202025,66 21,66 Z M22.824,37.622 C22.8533335,37.6513335 22.897333,37.666 22.956,37.666 L23.044,37.688 C23.102667,37.746667 23.1576664,37.7869999 23.209,37.809 C23.2603336,37.8310001 23.286,37.8493333 23.286,37.864 C23.3300002,37.864 23.352,37.8786665 23.352,37.908 C23.4546672,38.0106672 23.535333,38.1059996 23.594,38.194 L23.682,38.414 C23.7113335,38.5313339 23.726,38.6046665 23.726,38.634 L23.748,38.744 L23.748,47.698 L23.968,47.698 C24.305335,47.698 24.5949988,47.8153322 24.837,48.05 C25.0790012,48.2846678 25.2,48.570665 25.2,48.908 C25.2,49.245335 25.0790012,49.5313322 24.837,49.766 C24.5949988,50.0006678 24.305335,50.118 23.968,50.118 L23.748,50.118 L23.748,51.79 C23.748,52.127335 23.6306678,52.4133322 23.396,52.648 C23.1613322,52.8826678 22.875335,53 22.538,53 C22.200665,53 21.9146678,52.8826678 21.68,52.648 C21.4453322,52.4133322 21.328,52.127335 21.328,51.79 L21.328,50.118 L14.398,50.118 C14.0899985,50.118 13.8406676,50.0300009 13.65,49.854 C13.3713319,49.6486656 13.2173335,49.3810016 13.188,49.051 C13.1586665,48.7209983 13.2466656,48.4240013 13.452,48.16 L21.592,38.04 C21.6213335,38.04 21.6579998,37.9960004 21.702,37.908 C21.7313335,37.8933333 21.7789997,37.8603336 21.845,37.809 C21.9110003,37.7576664 21.973333,37.732 22.032,37.732 C22.0613335,37.6879998 22.0906665,37.666 22.12,37.666 L22.252,37.622 C22.2960002,37.622 22.3253333,37.6146667 22.34,37.6 L22.714,37.6 C22.7433335,37.6146667 22.7799998,37.622 22.824,37.622 Z" id="Oval-2" sketch:type="MSShapeGroup"></path>
+                <path d="M21.328,47.698 L21.328,42.264 L16.95,47.698 L21.328,47.698 Z" id="4" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="90" cy="204" r="21"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="158" cy="204" r="21"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="225" cy="124" r="21"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="294" cy="43" r="21"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="358" cy="43" r="21"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
