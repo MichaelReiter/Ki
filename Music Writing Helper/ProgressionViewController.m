@@ -99,30 +99,54 @@
     }
     
     //Create play button
-    UIButton *playButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 50, self.view.frame.size.height/2 - 50, 100, 100)];
-    [playButton addTarget:self
-                   action:@selector(playPressed:)
+    self.playButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 50, self.view.frame.size.height/2 - 50, 100, 100)];
+    [self.playButton addTarget:self
+                   action:@selector(dispatch)
          forControlEvents:UIControlEventTouchUpInside];
     SVGKImage *play = [SVGKImage imageNamed:@"play-button.svg"];
     play.size = CGSizeMake(iconSize, iconSize);
     UIImage *playIcon = play.UIImage;
-    [playButton setImage:playIcon forState:UIControlStateNormal];
-    [playButton setImage:playIcon forState:UIControlStateHighlighted];
-    //[self.view addSubview:playButton];
+    [self.playButton setImage:playIcon forState:UIControlStateNormal];
+    [self.playButton setImage:playIcon forState:UIControlStateHighlighted];
+    [self.view addSubview:self.playButton];
+}
+
+- (void)dispatch
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{[self playPressed:self.playButton];});
 }
 
 - (void)playPressed:(UIButton *)sender
 {
+    /*
     SystemSoundID soundID;
-    int k = 0;
-    while (k < self.progression.count){
-        //NSLog(@"%@", [self.progression objectAtIndex:k]);
-        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", [self.progression objectAtIndex:k]] ofType:@"wav"];
+    self.k = 0;
+    for (self.k = 0; self.k < self.progression.count; self.k++){
+        NSLog(@"%@", [self.progression objectAtIndex:self.k]);
+        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", [self.progression objectAtIndex:self.k]] ofType:@"wav"];
         NSURL *url = [NSURL fileURLWithPath:path];
+        
         AudioServicesCreateSystemSoundID((__bridge CFURLRef) url, &soundID);
         AudioServicesPlaySystemSound(soundID);
-        //code to check that the sound finished playing:
-        k++;
+        
+        //find a way to delay or wait until sound is finished playing
+        
+    }
+    */
+    
+    int k = 0;
+    NSError *error;
+    NSString *path;
+    NSURL *url;
+    while (k < self.progression.count){
+        if (![self.audioPlayer isPlaying]){
+            path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", [self.progression objectAtIndex:k]] ofType:@"wav"];
+            url = [NSURL fileURLWithPath:path];
+            self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+            [self.audioPlayer prepareToPlay];
+            [self.audioPlayer play];
+            k++;
+        }
     }
 }
 

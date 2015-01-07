@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "SVGKImage.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface ChartViewController : UIViewController
 
 @property UIColor *color;
 @property (strong, nonatomic) NSString *chord;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 - (void)playPressed:(UIButton *)sender;
 

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NSArray+Key.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface ProgressionViewController : UIViewController
 
@@ -16,7 +17,12 @@
 @property (strong, nonatomic) NSArray *chords;
 @property (strong, nonatomic) NSMutableArray *progression;
 @property UIColor *initialColor;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
+@property (strong, nonatomic) NSString *path;
+@property (strong, nonatomic) UIButton *playButton;
 
 - (void)chordPressed:(id)sender;
+
+- (void)dispatch;
 
 @end
