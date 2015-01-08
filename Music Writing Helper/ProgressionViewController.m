@@ -113,39 +113,26 @@
 
 - (void)dispatch
 {
+    //send the playPressed message on the global queue so the sound can be played while the UI is upadated
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{[self playPressed:self.playButton];});
 }
 
 - (void)playPressed:(UIButton *)sender
 {
-    /*
-    SystemSoundID soundID;
-    self.k = 0;
-    for (self.k = 0; self.k < self.progression.count; self.k++){
-        NSLog(@"%@", [self.progression objectAtIndex:self.k]);
-        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", [self.progression objectAtIndex:self.k]] ofType:@"wav"];
-        NSURL *url = [NSURL fileURLWithPath:path];
-        
-        AudioServicesCreateSystemSoundID((__bridge CFURLRef) url, &soundID);
-        AudioServicesPlaySystemSound(soundID);
-        
-        //find a way to delay or wait until sound is finished playing
-        
-    }
-    */
-    
     int k = 0;
     NSError *error;
     NSString *path;
     NSURL *url;
-    while (k < self.progression.count){
-        if (![self.audioPlayer isPlaying]){
-            path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", [self.progression objectAtIndex:k]] ofType:@"wav"];
-            url = [NSURL fileURLWithPath:path];
-            self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-            [self.audioPlayer prepareToPlay];
-            [self.audioPlayer play];
-            k++;
+    if (![self.audioPlayer isPlaying]){
+        while (k < self.progression.count){
+            if (![self.audioPlayer isPlaying]){
+                path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", [self.progression objectAtIndex:k]] ofType:@"wav"];
+                url = [NSURL fileURLWithPath:path];
+                self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+                [self.audioPlayer prepareToPlay];
+                [self.audioPlayer play];
+                k++;
+            }
         }
     }
 }
