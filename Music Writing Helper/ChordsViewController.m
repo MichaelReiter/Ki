@@ -19,7 +19,7 @@
     
     //enable swipe back gesture
     self.navigationController.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     
     UIColor *initialColor = [[UIColor alloc] initWithHue:self.hue saturation:self.saturation brightness:self.brightness alpha:1];
     

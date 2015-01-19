@@ -91,15 +91,6 @@
     NSURL *url = [NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef) url, &soundID);
     AudioServicesPlaySystemSound(soundID);
-    
-    /*
-    NSError *error;
-    NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", self.chord] ofType:@"wav"];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-    [self.audioPlayer prepareToPlay];
-    [self.audioPlayer play];
-     */
 }
 
 - (BOOL)prefersStatusBarHidden
