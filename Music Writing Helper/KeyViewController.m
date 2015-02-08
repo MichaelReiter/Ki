@@ -15,8 +15,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    
+
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"tutorialShown"]){
         //show instructions only on first launch
         InstructionsViewController *instructionsVC = [[InstructionsViewController alloc] initWithNibName:nil bundle:nil];
@@ -184,10 +183,6 @@
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
-}
-
-- (void)viewDidAppear:(BOOL)animated{
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 }
 
 @end

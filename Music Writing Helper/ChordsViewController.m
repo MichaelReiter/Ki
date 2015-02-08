@@ -17,9 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //enable swipe back gesture
-    self.navigationController.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    //enable swipe to go back gesture
+    UISwipeGestureRecognizer *swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedBack)];
+    swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeGestureRecognizer];
     
     UIColor *initialColor = [[UIColor alloc] initWithHue:self.hue saturation:self.saturation brightness:self.brightness alpha:1];
     
@@ -120,6 +121,11 @@
     randomizerVC.key = [self.chords objectAtIndex:0];
     randomizerVC.chords = self.chords;
     [self.navigationController pushViewController:randomizerVC animated:YES];
+}
+
+- (void)swipedBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (BOOL)prefersStatusBarHidden

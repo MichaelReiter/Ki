@@ -1065,7 +1065,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Music Writing Helper/Music Writing Helper-Prefix.pch";
 				INFOPLIST_FILE = "Music Writing Helper/Music Writing Helper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = Ki;
 				PROVISIONING_PROFILE = "";
@@ -1085,7 +1085,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Music Writing Helper/Music Writing Helper-Prefix.pch";
 				INFOPLIST_FILE = "Music Writing Helper/Music Writing Helper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Music",

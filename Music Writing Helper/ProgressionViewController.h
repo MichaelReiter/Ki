@@ -20,6 +20,7 @@
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 @property (strong, nonatomic) NSString *path;
 @property (strong, nonatomic) UIButton *playButton;
+@property int playCounter;
 
 - (void)chordPressed:(id)sender;
 

@@ -16,6 +16,11 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:self.color];
     
+    //enable swipe to go back gesture
+    UISwipeGestureRecognizer *swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedBack)];
+    swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeGestureRecognizer];
+    
     //set the default number of chords to 4
     self.numberOfChords = 4;
     
@@ -26,7 +31,7 @@
         upPositionModifier = 50;
         downPositionModifier = 57;
         if (self.view.frame.size.height < 500){
-            downPositionModifier -= 4;  //correct down arrow position for iPhone 4S
+            downPositionModifier -= 10;  //correct down arrow position for iPhone 4S
         }
         arrowIconSize = 25;
         numberLabelFontSize = 50;
@@ -142,6 +147,11 @@
     progressionVC.chords = self.chords;
     progressionVC.initialColor = self.initialColor;
     [self.navigationController pushViewController:progressionVC animated:YES];
+}
+
+- (void)swipedBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (BOOL)prefersStatusBarHidden

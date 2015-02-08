@@ -18,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.playCounter = 0;
+    
+    //enable swipe to go back gesture
+    UISwipeGestureRecognizer *swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedBack)];
+    swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeGestureRecognizer];
+    
     int fontSize, iconSize;
     int widthOfButton = self.view.frame.size.width/2;
     
@@ -119,21 +126,21 @@
 
 - (void)playPressed:(UIButton *)sender
 {
-    int k = 0;
     NSError *error;
     NSString *path;
     NSURL *url;
-    if (![self.audioPlayer isPlaying]){
-        while (k < self.progression.count){
+    if (![self.audioPlayer isPlaying] && self.playCounter == 0){
+        while (self.playCounter < self.progression.count){
             if (![self.audioPlayer isPlaying]){
-                path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", [self.progression objectAtIndex:k]] ofType:@"wav"];
+                path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", [self.progression objectAtIndex:self.playCounter]] ofType:@"wav"];
                 url = [NSURL fileURLWithPath:path];
                 self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
                 [self.audioPlayer prepareToPlay];
                 [self.audioPlayer play];
-                k++;
+                self.playCounter++;
             }
         }
+        self.playCounter = 0;
     }
 }
 
@@ -143,6 +150,11 @@
     chartVC.color = sender.backgroundColor;
     chartVC.chord = sender.titleLabel.text;
     [self.navigationController pushViewController:chartVC animated:YES];
+}
+
+- (void)swipedBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (BOOL)prefersStatusBarHidden

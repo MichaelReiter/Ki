@@ -18,6 +18,11 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:self.color];
     
+    //enable swipe to go back gesture
+    UISwipeGestureRecognizer *swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedBack)];
+    swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeGestureRecognizer];
+    
     int fontSize, iconSize, chartSize, chordLabelXPosition, chordLabelYPosition, playButtonXPosition, playButtonYPosition;
     
     if (self.view.frame.size.width < 330){          //iPhone 4S, 5, 5S
@@ -91,6 +96,11 @@
     NSURL *url = [NSURL fileURLWithPath:path];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef) url, &soundID);
     AudioServicesPlaySystemSound(soundID);
+}
+
+- (void)swipedBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (BOOL)prefersStatusBarHidden

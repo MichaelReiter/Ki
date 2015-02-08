@@ -42,7 +42,7 @@
     instructionsLabel.textAlignment = NSTextAlignmentCenter;
     instructionsLabel.textColor = [UIColor whiteColor];
     instructionsLabel.backgroundColor = [UIColor clearColor];
-    instructionsLabel.text = @"To go back, swipe right from the far left side of the screen.";
+    instructionsLabel.text = @"Swipe right to go back.";
     instructionsLabel.font = [UIFont fontWithName:@"Quicksand-Bold" size:fontSize];
     [instructionsLabel setCenter:CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)];
     instructionsLabel.numberOfLines = 0;
