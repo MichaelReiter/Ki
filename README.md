@@ -1,6 +1,18 @@
-Ki
-===============
+# Ki
 
-This repo is for my iOS development endeavour, an app called Ki. Feel free to share code or comment.
+A colourful and intuitive iOS app to help musicians be more creative. It lists chords in common keys, algorithmically generates and plays chord progressions, and displays guitar chord charts.
 
-Ki is free on the app store: https://itunes.apple.com/ca/app/id955086812
+Built with Objective-C.
+
+## Download
+
+Ki is available for free on the [App Store](https://itunes.apple.com/ca/app/id955086812)
+
+## Screenshots
+
+<img src='http://michaelreiter.github.io/img/screenshots/ki1.png' />
+<img src='http://michaelreiter.github.io/img/screenshots/ki3.png' />
+
+## License
+
+MIT
